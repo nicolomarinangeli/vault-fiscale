@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vault Fiscale — scontrini del 730 e garanzie su iPhone</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:image" content="https://nicolomarinangeli.github.io/vault-fiscale/img/icona-512.png">
 <meta name="description" content="Vault Fiscale: scontrini del 730 e garanzie di casa, in un archivio che ti avvisa. Pagina di supporto e informativa privacy.">
 <style>
   :root {
@@ -23,6 +26,9 @@
     -webkit-text-size-adjust: 100%;
   }
   main { max-width: 42rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+  .brand { display: flex; align-items: center; gap: .75rem; margin: 0 0 1.4rem; }
+  .brand img { width: 56px; height: 56px; border-radius: 22.5%; box-shadow: 0 1px 3px rgba(0,0,0,.18); }
+  .brand .kicker { margin: 0; }
   .kicker {
     font-size: .8rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
     color: var(--muted); margin: 0 0 .5rem;
@@ -55,7 +61,13 @@
 <body>
 <main>
 
-  <p class="kicker">Vault Fiscale</p>
+  <div class="brand">
+    <picture>
+      <source srcset="img/icona-scura.png" media="(prefers-color-scheme: dark)">
+      <img src="img/icona.png" alt="Icona di Vault Fiscale" width="56" height="56">
+    </picture>
+    <p class="kicker">Vault Fiscale</p>
+  </div>
   <h1>Gli scontrini che ti servono a giugno</h1>
   <p class="lead">Un archivio per le spese del 730 e per le garanzie di casa. Tiene le carte in ordine e ti avvisa prima che una scadenza passi.</p>
 

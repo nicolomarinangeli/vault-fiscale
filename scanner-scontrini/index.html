@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scanner scontrini per iPhone — Vault Fiscale</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:image" content="https://nicolomarinangeli.github.io/vault-fiscale/img/icona-512.png">
+<meta name="description" content="Scanner di scontrini gratis per iPhone: fotografi lo scontrino, Vault Fiscale legge totale, data e negozio, lo mette nella voce giusta del 730 e prepara il fascicolo per il CAF. Tutto resta sul telefono.">
+<link rel="canonical" href="https://nicolomarinangeli.github.io/vault-fiscale/scanner-scontrini/">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Lo scanner di scontrini è gratis?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sì. Vault Fiscale si scarica gratis e lo scanner funziona anche senza Pro. Il piano gratuito tiene un numero limitato di documenti; con Pro non c'è limite e si attiva la sincronizzazione con iCloud."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Funziona con gli scontrini della farmacia?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sì. Legge totale, data e negozio anche sugli scontrini lunghi e sbiaditi della farmacia, e li mette fra le spese sanitarie. Per la detrazione lo scontrino deve riportare il tuo codice fiscale: chiedilo in cassa prima di pagare."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Le foto degli scontrini vengono caricate su un server?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Il riconoscimento del testo avviene sull'iPhone. Le foto restano sul telefono e, se accendi la sincronizzazione, nel tuo iCloud."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Posso scansionare scontrini in altre lingue?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sì: lo scanner legge scontrini in italiano, inglese, spagnolo, tedesco e francese, comprese le date scritte in lettere."
+   }
+  }
+ ]
+}
+</script>
+<style>
+  :root {
+    --bg: #ffffff; --card: #f6f7f9; --text: #14161a; --muted: #4a5058;
+    --rule: #e2e5ea; --accent: #1c6ef2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1013; --card: #171a1f; --text: #f2f4f7; --muted: #a8b0ba;
+      --rule: #262b33; --accent: #6ea8ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+  .brand { display: flex; align-items: center; gap: .75rem; margin: 0 0 1.4rem; }
+  .brand img { width: 56px; height: 56px; border-radius: 22.5%; box-shadow: 0 1px 3px rgba(0,0,0,.18); }
+  .brand .kicker { margin: 0; }
+  .kicker {
+    font-size: .8rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .5rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .6rem; letter-spacing: -.015em; text-wrap: balance; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; text-wrap: balance; }
+  .lead { font-size: 1.15rem; color: var(--muted); margin: 0 0 2rem; }
+  p { margin: 0 0 .9rem; color: var(--muted); }
+  strong { color: var(--text); }
+  a { color: var(--accent); }
+  ul { color: var(--muted); padding-left: 1.2rem; margin: 0 0 .9rem; }
+  li { margin-bottom: .4rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 14px;
+    padding: 1.1rem 1.2rem; margin: 1.5rem 0;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .cta {
+    display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+    font-weight: 600; padding: .75rem 1.3rem; border-radius: 12px; margin: .3rem 0 .6rem;
+  }
+  .note { font-size: .9rem; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .85rem;
+  }
+  footer a { margin-right: 1rem; }
+  .faq h3 { font-size: 1rem; margin: 1.4rem 0 .3rem; color: var(--text); }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="brand">
+    <picture>
+      <source srcset="../img/icona-scura.png" media="(prefers-color-scheme: dark)">
+      <img src="../img/icona.png" alt="Icona di Vault Fiscale" width="56" height="56">
+    </picture>
+    <p class="kicker">Scanner scontrini · Vault Fiscale</p>
+  </div>
+  <h1>Scanner di scontrini per iPhone, pronto per il 730</h1>
+  <p class="lead">Fotografi lo scontrino e l'app legge totale, data e negozio. Le spese si ordinano da sole per il 730, le garanzie per scadenza. Niente account, niente server.</p>
+
+  <h2>1. Una foto, e lo scontrino è archiviato</h2>
+  <p>Inquadri lo scontrino con la fotocamera dell'app: il bordo viene trovato da solo e la foto raddrizzata. Vault Fiscale legge <strong>totale, data e negozio</strong> e propone la categoria: farmacia, visita medica, scuola, veterinario, spesa per la casa. Tu controlli, correggi se serve e salvi.</p>
+  <p>Funziona anche con le foto già scattate, con i PDF delle fatture arrivate per email e con gli scontrini lunghi o sbiaditi della farmacia, che l'app schiarisce prima di leggerli.</p>
+
+  <h2>2. Pronto per il 730</h2>
+  <p>Ogni spesa finisce nella sua voce del 730 e nell'anno giusto. L'app ti avvisa quando il modo in cui hai pagato può far perdere la detrazione: una visita privata pagata in contanti, dei lavori in casa pagati con carta invece che con bonifico parlante. A fine anno prepara un <strong>fascicolo PDF</strong> con l'elenco e le foto, da portare al CAF o al commercialista.</p>
+  <p>L'app non compila la dichiarazione e non calcola quanto puoi detrarre: tiene le carte in ordine, così chi la compila trova tutto.</p>
+
+  <h2>3. Lo scanner legge sul telefono, non in rete</h2>
+  <p>Il testo viene riconosciuto <strong>sull'iPhone</strong>, con il riconoscimento di iOS e, dove c'è, con Apple Intelligence. Nessuna foto viene caricata da qualche parte: non c'è un account da creare e non c'è un server di Vault Fiscale.</p>
+
+  <h2>4. Anche garanzie e ricevute di quello che compri</h2>
+  <p>Lo scontrino di un elettrodomestico o di un telefono non serve solo al 730: è la prova d'acquisto della garanzia. Vault Fiscale lo collega al prodotto e ti avvisa prima che scadano la garanzia e la finestra di reso.</p>
+
+  <h2>5. Esporta quando vuoi</h2>
+  <p>L'elenco delle spese si esporta come foglio di calcolo (CSV), oppure come archivio ZIP con l'elenco e tutte le foto, ognuna chiamata come la sua riga. Puoi tenerne una copia dove preferisci.</p>
+
+  <div class="card">
+    <p><strong>Vault Fiscale è gratis per iPhone.</strong> Con Pro tieni tutti i documenti che vuoi e li sincronizzi sul tuo iCloud.</p>
+    <p><a class="cta" href="https://apps.apple.com/app/apple-store/id6805537752?pt=129348976&amp;ct=scanner-scontrini&amp;mt=8">Scarica sull'App Store</a></p>
+    <p class="note">Nessun account e nessun server di Vault Fiscale: i documenti restano sul tuo telefono.</p>
+  </div>
+
+  <h2>Domande frequenti</h2>
+  <div class="faq">
+  <h3>Lo scanner di scontrini è gratis?</h3>
+  <p>Sì. Vault Fiscale si scarica gratis e lo scanner funziona anche senza Pro. Il piano gratuito tiene un numero limitato di documenti; con Pro non c'è limite e si attiva la sincronizzazione con iCloud.</p>
+  <h3>Funziona con gli scontrini della farmacia?</h3>
+  <p>Sì. Legge totale, data e negozio anche sugli scontrini lunghi e sbiaditi della farmacia, e li mette fra le spese sanitarie. Per la detrazione lo scontrino deve riportare il tuo codice fiscale: chiedilo in cassa prima di pagare.</p>
+  <h3>Le foto degli scontrini vengono caricate su un server?</h3>
+  <p>No. Il riconoscimento del testo avviene sull'iPhone. Le foto restano sul telefono e, se accendi la sincronizzazione, nel tuo iCloud.</p>
+  <h3>Posso scansionare scontrini in altre lingue?</h3>
+  <p>Sì: lo scanner legge scontrini in italiano, inglese, spagnolo, tedesco e francese, comprese le date scritte in lettere.</p>
+  </div>
+
+  <footer>
+    <a href="../">Vault Fiscale</a>
+    <a href="../guida-730/">Guida al 730</a>
+    <a href="../inventario-casa/">Inventario di casa</a>
+    <a href="../privacy/">Informativa privacy</a>
+  </footer>
+
+</main>
+</body>
+</html>

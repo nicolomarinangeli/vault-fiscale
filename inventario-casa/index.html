@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventario di casa su iPhone — Vault Fiscale</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:image" content="https://nicolomarinangeli.github.io/vault-fiscale/img/icona-512.png">
+<meta name="description" content="Inventario di casa gratis per iPhone: ogni oggetto con foto, numero di serie, scontrino, garanzia e manuale. Promemoria prima che scadano garanzia e reso, fascicolo pronto per l'assistenza.">
+<link rel="canonical" href="https://nicolomarinangeli.github.io/vault-fiscale/inventario-casa/">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Come si fa l'inventario della casa con l'iPhone?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Con Vault Fiscale fotografi l'oggetto o il suo scontrino, aggiungi marca, modello e numero di serie e allega garanzia e manuale. Conviene partire dalle cose di valore: elettrodomestici, telefoni e computer, televisori, biciclette, mobili."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "L'inventario serve per l'assicurazione della casa?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Può servire: in caso di danno o furto l'assicurazione chiede di dimostrare cosa avevi e quanto valeva. Un elenco con foto e prove d'acquisto rende la richiesta più semplice. Cosa viene rimborsato dipende dalla tua polizza."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "È gratis?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sì, Vault Fiscale si scarica gratis. Il piano gratuito tiene un numero limitato di documenti; con Pro non c'è limite e l'inventario si sincronizza sui tuoi dispositivi con iCloud."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "I dati dell'inventario dove finiscono?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sul tuo iPhone e, se lo scegli, nel tuo iCloud. Vault Fiscale non ha un server e non chiede di creare un account."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Posso tenere anche gli scontrini per il 730?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sì. La stessa app archivia le spese detraibili e prepara a fine anno il fascicolo per il CAF o il commercialista."
+   }
+  }
+ ]
+}
+</script>
+<style>
+  :root {
+    --bg: #ffffff; --card: #f6f7f9; --text: #14161a; --muted: #4a5058;
+    --rule: #e2e5ea; --accent: #1c6ef2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1013; --card: #171a1f; --text: #f2f4f7; --muted: #a8b0ba;
+      --rule: #262b33; --accent: #6ea8ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+  .brand { display: flex; align-items: center; gap: .75rem; margin: 0 0 1.4rem; }
+  .brand img { width: 56px; height: 56px; border-radius: 22.5%; box-shadow: 0 1px 3px rgba(0,0,0,.18); }
+  .brand .kicker { margin: 0; }
+  .kicker {
+    font-size: .8rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .5rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .6rem; letter-spacing: -.015em; text-wrap: balance; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; text-wrap: balance; }
+  .lead { font-size: 1.15rem; color: var(--muted); margin: 0 0 2rem; }
+  p { margin: 0 0 .9rem; color: var(--muted); }
+  strong { color: var(--text); }
+  a { color: var(--accent); }
+  ul { color: var(--muted); padding-left: 1.2rem; margin: 0 0 .9rem; }
+  li { margin-bottom: .4rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 14px;
+    padding: 1.1rem 1.2rem; margin: 1.5rem 0;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .cta {
+    display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+    font-weight: 600; padding: .75rem 1.3rem; border-radius: 12px; margin: .3rem 0 .6rem;
+  }
+  .note { font-size: .9rem; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .85rem;
+  }
+  footer a { margin-right: 1rem; }
+  .faq h3 { font-size: 1rem; margin: 1.4rem 0 .3rem; color: var(--text); }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="brand">
+    <picture>
+      <source srcset="../img/icona-scura.png" media="(prefers-color-scheme: dark)">
+      <img src="../img/icona.png" alt="Icona di Vault Fiscale" width="56" height="56">
+    </picture>
+    <p class="kicker">Inventario casa · Vault Fiscale</p>
+  </div>
+  <h1>L'inventario di casa, con scontrini e garanzie</h1>
+  <p class="lead">Tutto quello che possiedi in un posto solo: foto, numero di serie, prova d'acquisto, garanzia e libretto. Quando qualcosa si rompe, o devi dimostrare cosa avevi, è già pronto.</p>
+
+  <h2>1. Cos'è un inventario di casa, e a cosa serve</h2>
+  <p>È l'elenco di quello che possiedi, con la prova di quando l'hai comprato e quanto l'hai pagato. Serve quando qualcosa si rompe e devi far valere la garanzia, quando chiami l'assistenza e ti chiedono il numero di serie, e quando devi dimostrare cosa avevi in casa dopo un furto, un incendio o un allagamento.</p>
+
+  <h2>2. Ogni oggetto con le sue carte</h2>
+  <p>In Vault Fiscale ogni oggetto ha una scheda: <strong>foto, marca, modello, numero di serie</strong>, data e prezzo d'acquisto, negozio e numero d'ordine. Accanto ci metti lo scontrino, il certificato di garanzia, il libretto di istruzioni, la bolla di consegna. Tutto resta con il prodotto, e lo ritrovi cercando il nome, la marca o il negozio.</p>
+
+  <h2>3. Garanzie e resi che non scadono senza avviso</h2>
+  <p>Per ogni oggetto puoi segnare la garanzia e la finestra di reso: l'app ti manda un promemoria prima che finiscano. Quando qualcosa si guasta, un tocco prepara il <strong>fascicolo di garanzia</strong> con scontrino, date e numero di serie, pronto da mandare al venditore o al centro assistenza.</p>
+
+  <h2>4. Manutenzioni e riparazioni</h2>
+  <p>La caldaia da revisionare, il condizionatore da pulire, la lavatrice riparata due anni fa: ogni oggetto tiene la sua storia di manutenzioni e riparazioni, con le ricevute.</p>
+
+  <h2>5. Una copia completa quando ti serve</h2>
+  <p>L'inventario si esporta come foglio di calcolo (CSV) o come archivio ZIP con l'elenco e tutti i file. Se un giorno devi dimostrare cosa avevi, hai pronto l'elenco con le prove d'acquisto.</p>
+
+  <h2>6. Resta a casa tua</h2>
+  <p>Nessun account e nessun server di Vault Fiscale: l'inventario sta sul tuo iPhone e, se accendi la sincronizzazione, nel tuo iCloud. Puoi chiudere l'app con un codice.</p>
+
+  <div class="card">
+    <p><strong>Vault Fiscale è gratis per iPhone.</strong> Con Pro tieni tutti i documenti che vuoi e li sincronizzi sul tuo iCloud.</p>
+    <p><a class="cta" href="https://apps.apple.com/app/apple-store/id6805537752?pt=129348976&amp;ct=inventario-casa&amp;mt=8">Scarica sull'App Store</a></p>
+    <p class="note">Nessun account e nessun server di Vault Fiscale: i documenti restano sul tuo telefono.</p>
+  </div>
+
+  <h2>Domande frequenti</h2>
+  <div class="faq">
+  <h3>Come si fa l'inventario della casa con l'iPhone?</h3>
+  <p>Con Vault Fiscale fotografi l'oggetto o il suo scontrino, aggiungi marca, modello e numero di serie e allega garanzia e manuale. Conviene partire dalle cose di valore: elettrodomestici, telefoni e computer, televisori, biciclette, mobili.</p>
+  <h3>L'inventario serve per l'assicurazione della casa?</h3>
+  <p>Può servire: in caso di danno o furto l'assicurazione chiede di dimostrare cosa avevi e quanto valeva. Un elenco con foto e prove d'acquisto rende la richiesta più semplice. Cosa viene rimborsato dipende dalla tua polizza.</p>
+  <h3>È gratis?</h3>
+  <p>Sì, Vault Fiscale si scarica gratis. Il piano gratuito tiene un numero limitato di documenti; con Pro non c'è limite e l'inventario si sincronizza sui tuoi dispositivi con iCloud.</p>
+  <h3>I dati dell'inventario dove finiscono?</h3>
+  <p>Sul tuo iPhone e, se lo scegli, nel tuo iCloud. Vault Fiscale non ha un server e non chiede di creare un account.</p>
+  <h3>Posso tenere anche gli scontrini per il 730?</h3>
+  <p>Sì. La stessa app archivia le spese detraibili e prepara a fine anno il fascicolo per il CAF o il commercialista.</p>
+  </div>
+
+  <footer>
+    <a href="../">Vault Fiscale</a>
+    <a href="../guida-730/">Guida al 730</a>
+    <a href="../scanner-scontrini/">Scanner scontrini</a>
+    <a href="../privacy/">Informativa privacy</a>
+  </footer>
+
+</main>
+</body>
+</html>
